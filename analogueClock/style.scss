@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+}
+
+#clock{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: azure;
+    .numbers{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: rgb(20, 20, 20);
+
+        
+        .number{
+            position: absolute;
+            font-size: 2rem;
+            font-weight: bold;
+            // background-color: cadetblue;
+            height: 100%;
+
+            &.One{
+                transform: rotate(30deg);
+                span{
+                    transform: rotate(-30deg);
+                    position: absolute;
+                }
+            }
+            &.Two{
+                transform: rotate(60deg);
+                span{
+                    transform: rotate(-60deg);
+                    position: absolute;
+                }
+            }
+            &.Three{
+                transform: rotate(90deg);
+                span{
+                    transform: rotate(-90deg);
+                    position: absolute;
+                }
+            }
+            &.Four{
+                transform: rotate(120deg);
+                span{
+                    transform: rotate(-120deg);
+                    position: absolute;
+                }
+            }
+            &.Five{
+                transform: rotate(150deg);
+                span{
+                    transform: rotate(-150deg);
+                    position: absolute;
+                }
+            }
+            &.Six{
+                transform: rotate(180deg);
+                span{
+                    transform: rotate(-180deg);
+                    position: absolute;
+                }
+            }
+            &.Seven{
+                transform: rotate(210deg);
+                span{
+                    transform: rotate(-210deg);
+                    position: absolute;
+                }
+            }
+            &.Eight{
+                transform: rotate(240deg);
+                span{
+                    transform: rotate(-240deg);
+                    position: absolute;
+                }
+            }
+            &.Nine{
+                transform: rotate(270deg);
+                span{
+                    transform: rotate(-270deg);
+                    position: absolute;
+                }
+            }
+            &.Ten{
+                transform: rotate(300deg);
+                span{
+                    transform: rotate(-300deg);
+                    position: absolute;
+                }
+            }
+            &.Eleven{
+                transform: rotate(330deg);
+                span{
+                    transform: rotate(-330deg);
+                    position: absolute;
+                }
+            }
+            &.Twelve{
+                transform: rotate(360deg);
+                span{
+                    transform: rotate(-360deg);
+                    position: absolute;
+                }
+            }
+        }
+    }
+    .hands{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .secondHand{
+                width: 3px;
+                height: 42%;
+                background-color: rgba(239, 10, 10, 0.687);
+                position: absolute;
+                border-radius: 10px;
+                transform: translateY(-50%);
+                rotate: 30deg;
+
+            }
+            .minuteHand{
+                width: 6px;
+                height: 33%;
+                background-color: rgb(57, 55, 55);
+                position: absolute;
+                border-radius: 10px;
+                transform: translateY(-50%);
+                rotate: 60deg;
+
+            }
+            .hourHand{
+                width: 10px;
+                height: 25%;
+                background-color: rgb(49, 44, 44);
+                position: absolute;
+                border-radius: 10px;
+
+                // bottom: 50%;
+                // transform-origin: bottom;
+                transform: translateY(-50%);
+                rotate: 60deg;
+
+            }
+
+    }
+    
+}
