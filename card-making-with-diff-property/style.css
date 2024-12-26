@@ -1,0 +1,83 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f4f8;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  background-color: #ffffff;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  box-shadow: 0 0 10px 3px rgb(155, 155, 155);
+}
+.card .nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.card .nav .avail {
+  background-color: green;
+  border-radius: 3em;
+  padding: 0.5rem 0.5rem;
+}
+.card .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+.card .profile img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 2px solid #d7e0f1;
+}
+.card .profile h4:nth-child(4) {
+  color: blue;
+}
+.card .center {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+}
+.card .center .div1 {
+  border: 0.1rem solid #d7e0f1;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9em;
+}
+.card p {
+  padding: 1rem 1rem;
+  text-align: center;
+  line-height: 1.3rem;
+}
+.card .dis {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card .dis .bar {
+  height: 0.2vw;
+  width: 10vw;
+  background-color: gray;
+  margin: 1rem;
+}
+.card .dis p {
+  width: 100%;
+}
+
+.dis p:hover {
+  background-color: #55a8fd;
+}/*# sourceMappingURL=style.css.map */
